@@ -4,65 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos - Escola Técnica</title>
+    <title>ACT - Academia Carioca de Tecnologia</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome para ícones de redes sociais -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Times New Roman', serif;
-            background-color: #EDE7E3;
+            background-color: #f5f5f5;
             color: #333;
         }
-
         .navbar {
-            background-color: #FFA62B; 
+            background-color: #ff6347;
         }
-
         .navbar-brand {
             font-family: 'Georgia', serif;
             font-weight: bold;
-            color: #EDE7E3;
+            color: #fff;
         }
-
         .nav-link {
-            color: #EDE7E3;
+            color: #fff;
         }
-
+        .carousel-inner img {
+            filter: grayscale(30%);
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
         h2 {
             font-family: 'Georgia', serif;
-            color: #16697A;
+            color: #ff6347;
         }
-
-        .card {
-            background-color: #82C0CC;
-            border: none;
-        }
-
-        .card-title {
-            color: #16697A;
-        }
-
-        .card-text {
-            color: #333;
-        }
-
         footer {
-            background-color: #16697A;
-            color: #EDE7E3;
+            background-color: #333;
+            color: #fff;
         }
-
         footer a {
-            color: #FFA62B;
+            color: #ff6347;
         }
-
-        .btn-primary {
-            background-color: #FFA62B;
-            border: none;
-        }
-
-        .btn-primary:hover {
-            background-color: #FF8A00;
+        .btn-matricula {
+            background-color: #ff6347;
+            color: #fff;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -70,62 +54,63 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Escola Técnica</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">ACT - Academia Carioca de Tecnologia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="#inicio">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="sobre.html">Sobre</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="cursos.html">Cursos</a>
+                    <a class="nav-link" href="#sobre">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="eventos.html">Eventos</a>
+                    <a class="nav-link" href="#cursos">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#eventos">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn btn-danger ml-3">Matricule-se Já</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Conteúdo Principal -->
+    <!-- Conteúdo da Página Cursos -->
     <section id="cursos" class="container my-5">
         <h2>Nossos Cursos</h2>
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/info.jpg" class="card-img-top" alt="Informática" style="width: 350px; height: 235px;">
+                    <img src="img/info.jpg" class="card-img-top img-fluid" alt="Informática">
                     <div class="card-body">
                         <h5 class="card-title">Informática</h5>
-                        <p class="card-text">O curso de Informática oferece uma formação completa em programação, desenvolvimento de sistemas, redes de computadores e segurança da informação. Os alunos têm a oportunidade de trabalhar com projetos práticos e inovadores, preparando-se para as demandas do mercado de trabalho.</p>
+                        <p class="card-text">Explore o universo da programação, redes de computadores e desenvolvimento de sistemas, com uma abordagem prática e criativa.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/mecatronica.jpg" class="card-img-top" alt="Mecatrônica" style="width: 350px;height: 235px;">
+                    <img src="img/mecatronica.jpg" class="card-img-top img-fluid" alt="Mecatrônica">
                     <div class="card-body">
                         <h5 class="card-title">Mecatrônica</h5>
-                        <p class="card-text">O curso de Mecatrônica integra conhecimentos de mecânica, eletrônica e informática para desenvolver sistemas automatizados. Os alunos aprendem a projetar e implementar soluções tecnológicas em diversas áreas da indústria, tornando-se profissionais versáteis e altamente qualificados.</p>
+                        <p class="card-text">Uma jornada pelas engrenagens da automação industrial, onde mecânica, eletrônica e informática se encontram.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-<img src="img/admin.jpg" class="card-img-top" alt="Administração" style="width: 350px;height: 235px;">
+                    <img src="img/admin.jpg" class="card-img-top img-fluid" alt="Administração">
                     <div class="card-body">
                         <h5 class="card-title">Administração</h5>
-                        <p class="card-text">O curso de Administração prepara os alunos para atuarem em gestão empresarial, finanças, marketing e recursos humanos. Com um foco em inovação e empreendedorismo, o curso oferece uma formação abrangente que capacita os alunos a liderarem em um mercado competitivo.</p>
+                        <p class="card-text">Desenvolva habilidades em gestão empresarial, finanças e recursos humanos com foco em inovação e empreendedorismo.</p>
                     </div>
                 </div>
             </div>
         </div>
-    
     </section>
 
     <!-- Rodapé -->
@@ -136,7 +121,7 @@
                     <h5>Contato</h5>
                     <p>Endereço: Rua Exemplo, 123, Rio de Janeiro, RJ</p>
                     <p>Telefone: (21) 1234-5678</p>
-                    <p>Email: contato@escolatecnica.com.br</p>
+                    <p>Email: contato@act.edu.br</p>
                 </div>
                 <div class="col-md-6 mb-3">
                     <h5>Envie-nos uma mensagem</h5>
@@ -150,11 +135,20 @@
                             <input type="email" class="form-control" id="email" placeholder="Seu email">
                         </div>
                         <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <select class="form-control" id="assunto">
+                                <option value="matricula">Matrícula</option>
+                                <option value="financeiro">Financeiro</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
                             <label for="mensagem">Mensagem</label>
                             <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
+                    <a href="#" class="btn btn-matricula mt-3">Matricule-se Já</a>
                 </div>
             </div>
             <p class="mt-4">Siga-nos nas redes sociais:</p>
@@ -165,15 +159,14 @@
                 <i class="fab fa-facebook-f fa-2x"></i>
             </a>
             <a href="https://www.youtube.com" target="_blank" class="text-light mx-2">
-<i class="fab fa-youtube fa-2x"></i>
+                <i class="fab fa-youtube fa-2x"></i>
             </a>
         </div>
-        <p class="mt-4">&copy; 2024 Escola Técnica do Rio de Janeiro. Todos os direitos reservados.</p>
+        <p class="mt-4">&copy; 2024 ACT - Academia Carioca de Tecnologia. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
