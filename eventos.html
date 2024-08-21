@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Escola Técnica</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones de redes sociais -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #EDE7E3;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #FFA62B; 
+        }
+
+        .navbar-brand {
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            color: #EDE7E3;
+        }
+
+        .nav-link {
+            color: #EDE7E3;
+        }
+
+        h2 {
+            font-family: 'Georgia', serif;
+            color: #16697A;
+        }
+
+        footer {
+            background-color: #16697A;
+            color: #EDE7E3;
+        }
+
+        footer a {
+            color: #FFA62B;
+        }
+
+        .btn-primary {
+            background-color: #FFA62B;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #FF8A00;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Escola Técnica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="eventos.html">Eventos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <section id="eventos" class="container my-5">
+        <h2>Próximos Eventos</h2>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <h5 class="mb-1">Feira de Tecnologia e Inovação</h5>
+                <p class="mb-1">Data: 15 de Setembro de 2024</p>
+                <p class="mb-1">Descrição: Venha conhecer as últimas tendências em tecnologia e inovação com palestras, workshops e exposição de projetos dos alunos.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <h5 class="mb-1">Semana do Empreendedorismo</h5>
+                <p class="mb-1">Data: 22 a 26 de Outubro de 2024</p>
+                <p class="mb-1">Descrição: Um evento focado em desenvolver habilidades empreendedoras, com a participação de grandes nomes do mercado.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <h5 class="mb-1">Mostra de Artes e Design</h5>
+                <p class="mb-1">Data: 5 de Novembro de 2024</p>
+                <p class="mb-1">Descrição: Exposição dos trabalhos dos alunos de Design de Interiores, mostrando criatividade e inovação na criação de ambientes.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <h5 class="mb-1">Festa de Confraternização de Fim de Ano</h5>
+                <p class="mb-1">Data: 18 de Dezembro de 2024</p>
+                <p class="mb-1">Descrição: Um
+<p class="mb-1">Descrição: Uma noite de celebração para encerrar o ano com chave de ouro. A festa contará com apresentações musicais, premiações e muita diversão.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <h5 class="mb-1">Palestra: Sustentabilidade na Construção Civil</h5>
+                <p class="mb-1">Data: 12 de Janeiro de 2025</p>
+                <p class="mb-1">Descrição: Uma palestra que aborda as práticas sustentáveis na construção civil, com foco em novas tecnologias e materiais ecológicos.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5>Contato</h5>
+                    <p>Endereço: Rua Exemplo, 123, Rio de Janeiro, RJ</p>
+                    <p>Telefone: (21) 1234-5678</p>
+                    <p>Email: contato@escolatecnica.com.br</p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h5>Envie-nos uma mensagem</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu email">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <p class="mt-4">Siga-nos nas redes sociais:</p>
+            <a href="https://www.instagram.com" target="_blank" class="text-light mx-2">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="text-light mx-2">
+                <i class="fab fa-facebook-f fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="text-light mx-2">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+        </div>
+        <p class="mt-4">&copy; 2024 Escola Técnica do Rio de Janeiro. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
